@@ -1,0 +1,111 @@
+.root {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+  padding: 0px;
+}
+.root > * {
+  grid-column: 4;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > * {
+    grid-column: 4;
+  }
+}
+.repeaterGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.repeaterRow {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transition-property: all;
+  transition-duration: 1s;
+  backdrop-filter: none;
+  background: #ffffff;
+  min-width: 0;
+  -webkit-backdrop-filter: none;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+  padding: 8px;
+}
+.repeaterItemImage {
+  object-fit: cover;
+  max-width: 100%;
+}
+.repeaterItemImage > picture > img {
+  object-fit: cover;
+}
+.repeaterItemTitle {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.repeaterItemTitle2 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.repeaterItemDeleteBtn {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}
+.titleInput:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.upload:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.uploadImageField:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__hdplq {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text___2XUm {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
